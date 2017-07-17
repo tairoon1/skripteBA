@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\draw (0,0) -- (4,0) -- (4,4) -- (0,4) -- (0,2.1) -- (1,2) -- (0,1.9) -- (0,0);
+
+\draw [thick,<->] (-0.5,0) -- (-.5,4) node[midway,left] {\textbf{H}};
+\draw [thick,<->] (0,5) -- (4,5) node[midway,above] {\textbf{W}};
+\draw [thick,<->] (0,1.8) -- (1,1.8) node[midway,below] {\textbf{a}};
+
+\foreach \x in {0.5,1,1.5,2,2.5,3,3.5}
+	\draw[->] (\x,4) -- (\x,4.5);
+\foreach \x in {0.5,1,1.5,2,2.5,3,3.5}	
+	\draw[->] (\x,0) -- (\x,-0.5);
+\node at (2,4.7) {\bm{$\sigma_\infty$}};
+\node at (2,-0.7) {\bm{$\sigma_\infty$}};
+\end{tikzpicture}
