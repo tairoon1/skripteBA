@@ -15,7 +15,7 @@ i = 0
 
 
 node = import_file('dump_fatigue.peri*')
-node.modifiers.append(SelectExpressionModifier(expression = 'abs(Position.Y)>0.001 || Position.Z>0.016 || Position.Z<0.011 || Position.X<-0.135'))
+node.modifiers.append(SelectExpressionModifier(expression = 'abs(Position.Y)>0.001 || Position.Z>0.016 || Position.Z<0.011 || Position.X<-0.2399'))
 node.modifiers.append(DeleteSelectedParticlesModifier())
 node.modifiers.append(PythonScriptModifier(function = modify))
 
